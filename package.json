@@ -1,0 +1,26 @@
+{
+  "name": "learn-travis",
+  "version": "1.0.0",
+  "description": "learning travis-ci",
+  "main": "index.js",
+  "devDependencies": {
+    "jshint": "^2.9.5"
+  },
+  "scripts": {
+    "test": "jshint hello.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuffyKing/learn-travis.git"
+  },
+  "keywords": [
+    "travis",
+    "learning"
+  ],
+  "author": "Oyindamola Aderinwale",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LuffyKing/learn-travis/issues"
+  },
+  "homepage": "https://github.com/LuffyKing/learn-travis#readme"
+}
