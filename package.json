@@ -13,7 +13,8 @@
   },
   "scripts": {
     "test": "node node_modules/.bin/mocha",
-    "coverage":"istanbul cover ./node_modules/mocha/bin/_mocha --report text-lcov -- -R spec | node ./node_modules/coveralls/bin/coveralls.js",
+    "coverage":"istanbul cover ./node_modules/mocha/bin/_mocha --report text-lcov -- -R specs",
+    "coveralls":"node ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
