@@ -13,7 +13,7 @@
     "nyc": "^11.6.0"
   },
   "scripts": {
-    "test": "./node_modules/nyc/bin/nyc --reporter=html --reporter=text mocha",
+    "test": "nyc --reporter=html --reporter=text mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
