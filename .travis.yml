@@ -1,7 +1,4 @@
 language: node_js
 node_js:
- - "node"
-
-after_script:
-- "npm run coverage"
-- "npm run coveralls"
+- "stable"
+after_success: npm run coverage

@@ -9,12 +9,12 @@
     "istanbul": "^0.4.5",
     "jshint": "^2.9.5",
     "mocha": "^5.0.4",
-    "mocha-lcov-reporter": "^1.3.0"
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^11.6.0"
   },
   "scripts": {
-    "test": "node node_modules/.bin/mocha",
-    "coverage":"istanbul cover ./node_modules/mocha/bin/_mocha --report text-lcov -- -R specs",
-    "coveralls":"node ./node_modules/coveralls/bin/coveralls.js"
+    "test": "./node_modules/nyc/bin/nyc --reporter=html --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
